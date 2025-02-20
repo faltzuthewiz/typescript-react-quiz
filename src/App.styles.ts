@@ -30,15 +30,20 @@ export const Wrapper = styled.div`
      }
 
      .score {
-     color: #fff
+     color: #fff;
      font-size: 2rem;
      margin: 0;
      }
 
+    h1 {
+    color: #fff;
+    font-size: 4em;
+     }
+
      .start, .next {
     cursor: pointer;
-    background: linear-gradient(180deg, #ffffff, #ffcc91);
-    border: 2px solid #d38558;
+    background: linear-gradient(180deg, #ffffff,rgb(224, 145, 255));
+    border: 2px solidrgb(190, 88, 211);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 40px;
@@ -48,5 +53,6 @@ export const Wrapper = styled.div`
 
   .start {
     max-width: 200px;
+    
 }
     `;
