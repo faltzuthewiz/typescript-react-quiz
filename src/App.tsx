@@ -5,7 +5,7 @@ import QuestionCard from "./components/QuestionCard";
 // Types
 import { Difficulty } from "./API";
 // Styles
-import { GlobalStyle } from "./App.styles";
+import { GlobalStyle, Wrapper } from "./App.styles";
 
 export type AnswerObject = {
   question: string;
@@ -26,8 +26,6 @@ function App() {
   const [gameOver, setGameOver] = useState(true)
 
 
-  console.log(questions)
-
   const startQuiz = async () => {
     try {
       setLoading(true)
@@ -38,7 +36,6 @@ function App() {
         Difficulty.EASY
       )
 
-      console.log("Fetched Questions:", newQuestions) // Debuggausta varten
 
       if (!newQuestions || newQuestions.length === 0) {
         throw new Error("No questions returned from API")
@@ -92,7 +89,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <div>
+      <Wrapper>
         <h1>Quiz</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className="start" onClick={startQuiz}>Start</button>
@@ -113,7 +110,7 @@ function App() {
           <button className="next" onClick={nextQuestion}>Next question</button>
         ) : null}
 
-      </div>
+      </Wrapper>
     </>
   )
 }
