@@ -1,9 +1,11 @@
-# React + TypeScript + Vite
-
+Quiz app with React and Typescript
 
 I made a Quiz application with Typescript and React. I followed the tutorial by [freeCodeCamp.org](https://youtu.be/F2JCjVSZlG0?si=fE8lM4SXxsukvN0o) on Youtube. The video is almost 5 years old so I did not follow the tutorial 100 % since there was some deprecations and bad practices. My intention is to enhance the application later and refactor the code more.
 
+## API
+The API used in this project is provided by The Open Trivia Database by PIXELTAIL GAMES LLC. All data provided by the API is available under the Creative Commons Attribution-ShareAlike 4.0 International License.
 
+---
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
